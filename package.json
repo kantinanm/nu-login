@@ -1,0 +1,20 @@
+{
+  "name": "nulogin",
+  "version": "1.0.0",
+  "description": "authentication nu ",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "firewall",
+    "authentication",
+    "fortigate"
+  ],
+  "author": "Kantinan Makmee,",
+  "license": "MIT",
+  "dependencies": {
+    "nightmare": "^3.0.1"
+  }
+}
