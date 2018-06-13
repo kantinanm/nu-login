@@ -1,0 +1,2 @@
+exports.user = 'user-nu';
+exports.password = 'pass-nu';

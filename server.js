@@ -1,4 +1,6 @@
 var Nightmare = require('nightmare')
+var config = require('./config');
+
 var url = 'https://login3.nu.ac.th:1000/portal?'
 var duration = 1000 * 10
 
@@ -8,8 +10,8 @@ var auto = function () {
     nightmare
         .goto(url)
         .wait('input[type=submit]')
-        .insert('#ft_un', 'ecpe-software')
-        .insert('#ft_pd', '7890')
+        .insert('#ft_un', exports.user)
+        .insert('#ft_pd', exports.password)
         .click('input[type=submit]')
         .end()
         .then(function (body) {
